@@ -1,0 +1,67 @@
+
+
+<form>
+  <div class="container">
+      <div class="row">
+        <div class="form-group col-md-5">
+            <label class="form-label mt-4">Client Id</label>
+            <select class="form-select" name="clientid" id="clientid">
+                <option value="ok">Ok</option>
+            </select>
+        </div>
+        <div class="form-group offset-md-1 col-md-5">
+            <label for="clientname" class="form-label mt-4">Client name</label>
+            <input type="text" class="form-control" id="clientname" placeholder="Enter Client Name "
+            name="clientname"  [(ngModel)]="a" readonly>
+        </div>
+        <div class="form-group col-md-5">
+            <label class="form-label mt-4">Instrument Id</label>
+            <select class="form-select" name="instrumentid" id="instrumentid">
+                <option value="ok">Ok</option>
+            </select>
+        </div>
+        <div class="form-group offset-md-1 col-md-5">
+            <label class="form-label mt-4">Instrument name</label>
+            <select class="form-select" name="instrumentname" id="instrumentname">
+                <option value="ok">Ok</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-5">
+            <label class="form-label mt-4">Face Value</label>
+            <select class="form-select" name="facevalue" id="facevalue">
+                <option value="ok">Ok</option>
+            </select>
+        </div>
+        <div class="form-group offset-md-1 col-md-5">
+            <label class="form-label mt-4">Expiry Date</label>
+            <select class="form-select" name="expirydate" id="expirydate">
+                <option value="ok">Ok</option>
+            </select>
+        </div>
+
+
+        <div class="form-group  col-md-5">
+            <label for="price" class="form-label mt-4">Price</label>
+            <input type="number" class="form-control" id="price" placeholder="Enter Price "
+            name="price"  [(ngModel)]="a">
+        </div>
+        <div class="form-group offset-md-1 col-md-5">
+            <label for="quantity" class="form-label mt-4">Quantity</label>
+            <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity "
+            name="quantity"  [(ngModel)]="a">
+        </div>
+
+        <div class="form-group col-md-5">
+            <label for="direction" class="form-label mt-4">Direction</label>
+            <select class="form-select" name="direction" id="direction">
+                <option value="Buy">Buy</option>
+                <option value="Sell">Sell</option>
+            </select>
+        </div>
+        <div class="mt-5 mb-5 text-center">
+        <button class="btn btn-info" type="submit" >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger " type="reset" >Cancel</button>
+        </div>
+      </div></div>
+    </form>
